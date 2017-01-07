@@ -9,8 +9,8 @@ div .home{
 }
 
 .header .social a{
-    color: #eee;
-    border:2px solid #eee;
+    color: #4b5156;
+    border:2px solid #4b5156;
 }
 
 
@@ -30,4 +30,10 @@ footer .content h4:nth-of-type(2)::first-letter{
 
 .main-logo img{
     transform: scale(1.5);
+}
+
+@media screen and (max-width: 480px){
+    .home .wrapper-text{
+        margin: 20vh 10vw;
+    }
 }
