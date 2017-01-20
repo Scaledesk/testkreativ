@@ -19,6 +19,13 @@ div .home{
     background: #ffd800;
 }
 
+.service-figcaption p{
+    color: rgba(255,255,255,0.5);
+}
+
+.service-cnctfigcaption{
+    width: 100%;
+}
 
 footer .content h4:nth-of-type(2)::first-letter{
     color: #3d4348;
