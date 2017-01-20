@@ -9,8 +9,14 @@ div .home{
 }
 
 .header .social a{
-    color: #959ba0;
-    border:2px solid #959ba0;
+/*    color: #959ba0;*/
+    color: #ffd800;
+/*    border:2px solid #959ba0;*/
+    border: 2px solid #ffd800;
+}
+
+.header .navbars .icon-bar{
+    background: #ffd800;
 }
 
 
@@ -30,6 +36,12 @@ footer .content h4:nth-of-type(2)::first-letter{
 
 .main-logo img{
     transform: scale(1.5);
+}
+
+#sectionHome {
+    background-image: url("../images/home/background-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 480px){
