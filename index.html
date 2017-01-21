@@ -359,21 +359,22 @@
                 <h3>Join<span>Team</span></h3>
                 <h5>and experiance the world<span>class working environment</span></h5>
                 <p>We are way more appealing up front. If our work vibes with you, maybe we should put our heads together sometime. Call or write to us at <a href="mailto:hello@kreativstreet.com">hello@kreativstreet.com</a> and get ready to rediscover the world.</p>
-                <form class="row">
+                <form class="row"  method="POST" action="PHPMailer/MailFunction.php" enctype="multipart/form-data">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" name="name" class="form-control" placeholder="Name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
                   </div>
                   <div class="form-group1">
                     <div class="fileUpload btns">
                     <img src="images/icons/upload.png" alt="image">
                         <span>Attach your cv</span>
-                        <input type="file" class="upload" />
+                        <input type="file" class="upload" name="fileToUpload" />
                     </div>
                     <button type="submit" class=" btn btn-orange">Submit now</button>
-                  </div>  
+                  </div>
+                 
                 </form> 
                 
               </div>
@@ -602,14 +603,14 @@
                   comment:{required: true},
                 },
                 submitHandler: function (form) { 
-                  var suburl = 'mail.php',
+                  var suburl = 'PHPMailer/MailFunction.php',
                     cName=$("#name").val(),
                     cEml=$("#eml").val(),
                     cComment=$("#comment").val();
 
                   $('#contact .form-message').show();
 
-                  var data={'formid':'contact','cust_name':cName,'comments':cComment,'cust_email':cEml};
+                  var data={'formid':'contact','name':cName,'comments':cComment,'email':cEml};
                     $.post(suburl ,  data , function(response){
                       $('.contact-page-form').html(response);
                       $('.contact-page-form').show();
