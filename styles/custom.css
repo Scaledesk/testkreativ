@@ -66,6 +66,8 @@ footer .content h4:nth-of-type(2)::first-letter{
     }
 }
 
+/*for Macbook Air */
+
 @media screen and (min-width: 1367px){
    .jointeam-figcaption h3 span{
        display: inline-block;
@@ -73,6 +75,10 @@ footer .content h4:nth-of-type(2)::first-letter{
     
     .jointeam-figcaption h3{
         font-size: 100px;
+    }
+    
+    .contact .map-wrap{
+        height: 300px;
     }
 }
 
