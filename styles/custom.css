@@ -66,6 +66,15 @@ footer .content h4:nth-of-type(2)::first-letter{
     }
 }
 
+@media screen and (min-width: 1367px){
+   .jointeam-figcaption h3 span{
+       display: inline-block;
+    }
+    
+    .jointeam-figcaption h3{
+        font-size: 100px;
+    }
+}
 
 /*
 @media screen and (max-width: 600px){
