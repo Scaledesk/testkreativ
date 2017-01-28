@@ -45,11 +45,13 @@ footer .content h4:nth-of-type(2)::first-letter{
     transform: scale(1.5);
 }
 
+/*
 #sectionHome {
-    background-image: url("../images/home/WEB-KREAT.jpg");
+    background-image: url("../images/home/background-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+*/
 
 @media screen and (max-width: 480px){
     .home .wrapper-text{
@@ -64,6 +66,7 @@ footer .content h4:nth-of-type(2)::first-letter{
 }
 
 
+/*
 @media screen and (max-width: 600px){
     #sectionHome{
         background-image: url("../images/home/MOBILE.jpg");
@@ -71,3 +74,4 @@ footer .content h4:nth-of-type(2)::first-letter{
         background-size: cover;
     }
 }
+*/
