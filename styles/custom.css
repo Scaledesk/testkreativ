@@ -10,10 +10,10 @@ div .home{
 }
 
 .header .social a{
-/*    color: #959ba0;*/
-    color: #ffd800;
-/*    border:2px solid #959ba0;*/
-    border: 2px solid #ffd800;
+    color: #959ba0;
+    /*color: #ffd800;*/
+    border:2px solid #959ba0;
+    /*border: 2px solid #ffd800;*/
 }
 
 .header .navbars .icon-bar{
