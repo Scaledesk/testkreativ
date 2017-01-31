@@ -82,7 +82,7 @@ if($mail1->send())
       if($mail->send()){
         
 			         if(!$comments){
-			            header("location:http://localhost/testkreativ/thankyou.html");
+			            header("../thankyou.html");
                        
 
 			         }else{
@@ -94,7 +94,7 @@ if($mail1->send())
     }else{ 
 
 		       if(!$comments){
-		           header("location:http://localhost/testkreativ/thankyou.html");
+		           header("../thankyou.html");
 		           
 		         }else{
 		         	echo "<p class='success'>Thanks for contacting us.</p>";
