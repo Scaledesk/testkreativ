@@ -8,7 +8,7 @@ $name=$_POST['name'];
 $comments=$_POST['comments'];
 $email=$_POST['email'];
 
-$emailadmin="nkscoder@gmail.com";
+$emailadmin="hello@kreativstreet.com";
 $subject = "Contact Us - Kreativ";
 
 
@@ -82,7 +82,7 @@ if($mail1->send())
       if($mail->send()){
         
 			         if(!$comments){
-			            header("../thankyou.html");
+			            header("http://www.test.kreativstreet.com/thankyou.html");
                        
 
 			         }else{
@@ -94,7 +94,7 @@ if($mail1->send())
     }else{ 
 
 		       if(!$comments){
-		           header("../thankyou.html");
+		           header("http://www.test.kreativstreet.com/thankyou.html");
 		           
 		         }else{
 		         	echo "<p class='success'>Thanks for contacting us.</p>";
