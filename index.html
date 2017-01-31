@@ -361,16 +361,16 @@
                 <p>We are way more appealing up front. If our work vibes with you, maybe we should put our heads together sometime. Call or write to us at <a href="mailto:hello@kreativstreet.com">hello@kreativstreet.com</a> and get ready to rediscover the world.</p>
                 <form class="row"  method="POST" action="PHPMailer/MailFunction.php" enctype="multipart/form-data">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Name">
+                    <input type="text" required name="name" class="form-control" placeholder="Name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email">
+                    <input type="email" required class="form-control" name="email" placeholder="Email">
                   </div>
                   <div class="form-group1">
                     <div class="fileUpload btns">
                     <img src="images/icons/upload.png" alt="image">
                         <span>Attach your cv</span>
-                        <input type="file" class="upload" name="fileToUpload" />
+                        <input type="file" required class="upload" name="fileToUpload" />
                     </div>
                     <button type="submit" class=" btn btn-orange">Submit now</button>
                   </div>
@@ -485,13 +485,13 @@
                 </div>
                 <form method="post" name="contact" id="contact">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+                    <input type="text" required class="form-control" placeholder="Name" id="name" name="name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" id="eml" name="eml">
+                    <input type="email" required class="form-control" placeholder="Email" id="eml" name="eml">
                   </div>
                   <div class="form-group1">
-                    <textarea placeholder="Write your message" rows="4" class="form-control" id="comment" name="comment"></textarea>
+                    <textarea required placeholder="Write your message" rows="4" class="form-control" id="comment" name="comment"></textarea>
                   </div>
                   <button type="submit" class="btn btn-black">Submit Now</button>
                   <div class="contact-page-form form-message" >
